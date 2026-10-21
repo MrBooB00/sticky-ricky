@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Sticky Ricky Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body> 
+    <header> 
+        <h1> The Notes of Sticky Ricky </h1>
+    </header>
+
+    <main>
+        <form id="note-form">
+            <input
+                type="text"
+                id="note-title"
+                placeholder="Note Title..."
+                maxlength="80"
+                required
+            >
+
+            <textarea
+                type="text"
+                id="note-content"
+                placeholder="Write note content here..."
+                maxlength="2000"
+                required
+            ></textarea>
+
+            <div class="form-actions">
+                <label for note-color>Note Color:</label>
+
+                <select id="note-color">
+                    <option value="yellow">yellow</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                </select>
+
+                <button type="submit" id="save-button">
+                    Add Note
+                </button>
+            </div>
+        </form>
+
+        <section aria-labelledby="notes-heading">
+            <h2 id="notes-heading">Your notes</h2>
+            <div id="notes-container" class="notes-grid"></div>
+            <p id="empty message">No notes yet, create thy story of Sticky Ricky</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> Made with Coding Languages: HTML, Javascript, and CSS. Testing coding space</p>
+    </footer>
+</body>
+</html>

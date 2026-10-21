@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f3f8;
+  color: #292638;
+}
+
+header {
+  text-align: center;
+  padding: 35px 20px;
+  background: #6657a5;
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: min(1000px, 92%);
+  margin: 30px auto;
+}
+
+#note-form {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+  margin-bottom: 35px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  padding: 11px;
+  border: 1px solid #d5d2df;
+  border-radius: 7px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #6657a5;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(0.92);
+}
+
+#save-button {
+  margin-left: auto;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(220px, 100%), 1fr)
+  );
+  gap: 18px;
+}
+
+.note {
+  padding: 18px;
+  border-radius: 5px;
+  min-height: 180px;
+  box-shadow: 2px 4px 10px #00000015;
+  overflow-wrap: anywhere;
+}
+
+.note h3 {
+  margin-top: 0;
+}
+
+.note p {
+  white-space: pre-wrap;
+}
+
+.yellow {
+  background: #fff1a8;
+}
+
+.pink {
+  background: #ffd6e7;
+}
+
+.blue {
+  background: #cce8ff;
+}
+
+.green {
+  background: #d4f5d0;
+}
+
+.purple {
+  background: #e6d8ff;
+}
+
+.note-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.note-actions button {
+  background: #ffffffb8;
+  color: #292638;
+  border: 1px solid #00000015;
+}
+
+#empty-message {
+  color: #777184;
+}
+
+#empty-message[hidden] {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777184;
+}
+
+@media (max-width: 480px) {
+  .form-actions {
+    align-items: stretch;
+  }
+
+  #save-button {
+    margin-left: 0;
+  }
+}
