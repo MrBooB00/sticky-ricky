@@ -1,2 +1,2 @@
 # sticky-ricky
-sticky
+sticky note
